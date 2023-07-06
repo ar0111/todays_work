@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Collapsed Sidepanel</h1>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+      
+    <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+
+    <!-- Pagination -->
+    <h1>Pagination</h1>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <h1>Breadcrumbs</h1>
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Summer 15</a></li>
+        <li>Italy</li>
+    </ul>
+
+    <!-- Button Group -->
+    <h1>Button Group</h1>
+    <div class="btn-group">
+        <button>Apple</button>
+        <button>Samsung</button>
+        <button>Sony</button>
+    </div>
+
+    <!-- Vertical Button Groups -->
+    <h1>Vertical Button Groups</h1>
+    <div class="btn-group1">
+        <button>Apple</button>
+        <button>Samsung</button>
+        <button>Sony</button>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</body>
+</html>
